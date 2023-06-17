@@ -1,0 +1,51 @@
+C:\Users\USER\Desktop\project>python Engine_Evolution.py
+Enter path to fasta file or enter "RANDOM" for generate random sequence: sequence_old.txt
+Choice a model of nucleotide substitutions:
+1) JC69 (Jukes and Cantor 1969)
+2) K81 (Kimura 1981)
+3) F81 (Felsenstein 1981)
+4) GTR (Tavare 1986)
+5) Random model with random params
+==>5
+Start model: GTR, with params = [0.029411764705882353, 0.038461538461538464, 0.011764705882352941, 0.014925373134328358, 0.010752688172043012, 0.011904761904761904]
+Enter time: 2.5
+Enter path to save new generated sequence or enter "PRINT" for only print datas: sequence_generated.txt
+Q-matrix:
+[[-0.07963801  0.02941176  0.03846154  0.01176471]
+ [ 0.02941176 -0.05508983  0.01492537  0.01075269]
+ [ 0.03846154  0.01492537 -0.06529167  0.01190476]
+ [ 0.01176471  0.01075269  0.01190476 -0.03442216]]
+P-matrix:
+[[0.8260603  0.0642083  0.08202134 0.02771006]
+ [0.0642083  0.87467444 0.035566   0.02555126]
+ [0.08202134 0.035566   0.85437423 0.02803842]
+ [0.02771006 0.02555126 0.02803842 0.91870025]]
+
+C:\Users\USER\Desktop\project>python Predictor_Model_Evolution.py
+Enter path to fasta file with first (old) sequence: sequence_old.txt
+Enter path to fasta file with second (young) sequence: sequence_generated.txt
+Enter time: 2.5
+Empirical P-matrix:
+[[3373.  261.  370.  110.]
+ [ 212. 2808.  105.   62.]
+ [ 239.  128. 2634.   94.]
+ [ 135.  144.  146. 4312.]]
+Empirical Q-matrix:
+[[-0.08275384  0.03718452  0.05655517  0.00990162]
+ [ 0.02374504 -0.052193    0.01390934  0.00540481]
+ [ 0.0272541   0.01712892 -0.0669904   0.00857548]
+ [ 0.01394632  0.01911432  0.02013866 -0.03812997]]
+Best params for JC69: [0.020222081663748497]
+Best params for K81: [0.021586481632789707, 0.02625765668782472, 0.01289710667063105]
+Best params for F81: [0.014995543034320314, 0.02475633045133655, 0.025350830620752315, 0.01588562254858501]
+Best params for GTR: [0.029341717950494627, 0.04109658108649459, 0.012210868705255704, 0.013583344636006016, 0.011418732289154833, 0.013831245315085228]
+LLF(loglikelihood) for JC69: -320.8782643749289
+LLF(loglikelihood) for K81: -274.7793460696437
+LLF(loglikelihood) for F81: -311.4796816873456
+LLF(loglikelihood) for GTR: -98.13381085825887
+Difference points for JC69 method taking into account the complexity of the model: 643.7565287498578
+Difference points for K81 method taking into account the complexity of the model: 555.5586921392874
+Difference points for F81 method taking into account the complexity of the model: 630.9593633746912
+Difference points for GTR method taking into account the complexity of the model: 208.26762171651774
+Predicted model: GTR
+Best params: [0.029341717950494627, 0.04109658108649459, 0.012210868705255704, 0.013583344636006016, 0.011418732289154833, 0.013831245315085228]
