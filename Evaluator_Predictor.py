@@ -53,5 +53,13 @@ class Evaluator_Predictor():
             print(matrix_of_errors)
 if __name__ == "__main__":
     #it won't be fast
+    time_for_check = input('Enter times for check (ex: 0.5, 0.1, ...) or enter STANDART for standart check: ')
+    if time_for_check == "STANDART":
+        time_for_check = [1e-05, 0.0001, 0.001, 0.01, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0]
+    else:
+        t_arr = []
+        for x in time_for_check.split(', ')
+            t_arr.append(float(x))
+        time_for_check = t_arr
     checker = Evaluator_Predictor()
-    checker.evaluate(time_for_check=[1e-05, 0.0001, 0.001, 0.01, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0])
+    checker.evaluate(time_for_check=)
