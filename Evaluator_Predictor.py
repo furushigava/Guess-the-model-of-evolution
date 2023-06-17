@@ -62,4 +62,4 @@ if __name__ == "__main__":
             t_arr.append(float(x))
         time_for_check = t_arr
     checker = Evaluator_Predictor()
-    checker.evaluate(time_for_check=)
+    checker.evaluate(time_for_check=time_for_check )
