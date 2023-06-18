@@ -213,7 +213,7 @@ class Model_Evolution_Predictor():
 
         if print_datas:
             print('Empirical P-matrix: ')
-            print(self.emperical_probability_matrix)
+            print(self.emperical_probability_matrix / self.to_divisions)
             print('Empirical Q-matrix: ')
             print(self.emperical_intensity_matrix)
             print(f'Best params for JC69: {params_jc69[0]}')
