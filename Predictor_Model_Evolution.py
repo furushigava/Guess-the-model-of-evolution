@@ -262,4 +262,4 @@ if __name__ == "__main__":
     try:
         num_of_model_predicted = mep.predict()
     except:
-        print('Error detected. Maybe you should reduce the time?')
+        print('Error detected. Maybe you should change the time?')
