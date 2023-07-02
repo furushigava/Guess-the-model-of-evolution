@@ -2,7 +2,7 @@ import numpy as np
 import random
 class Models_Evolution():
     def JC69(self, alpha):
-        intensity_matrix = np.array([[-3*alpha, alpha, alpha, alpha],
+        intensity_matrix = np.array(  [[-3*alpha, alpha, alpha, alpha],
                                        [alpha, -3*alpha, alpha, alpha],
                                        [alpha, alpha, -3*alpha, alpha],
                                        [alpha, alpha, alpha, -3*alpha]])
