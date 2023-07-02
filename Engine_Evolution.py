@@ -74,7 +74,7 @@ if __name__ == "__main__":
             frequency_G = float(input('Enter guanine frequency: '))
             frequency_C = float(input('Enter cytosine frequency: '))
             frequency_T = float(input('Enter thymine frequency: '))
-            intensity_matrix = me.GTR(alpha, beta, gamma, lamda, delta, epsilon, eta, frequency_A, frequency_G, frequency_C, frequency_T)
+            intensity_matrix = me.GTR(alpha, beta, lamda, delta, epsilon, eta, frequency_A, frequency_G, frequency_C, frequency_T)
     elif choice == '5':
         intensity_matrix = me.generate_random_intensity_matrix()[1]
     if path == "RANDOM":
