@@ -224,7 +224,7 @@ class Model_Evolution_Predictor():
         params_jc69[1] = 2 * (1 - llf_jc69)
         params_k81[1] = 2 * (3 - llf_k81)
         params_f81[1] = 2 * (4 - llf_f81)
-        params_gtr[1] = 2 * (6 - llf_gtr)
+        params_gtr[1] = 2 * (10 - llf_gtr)
 
         if print_datas:
             print('Empirical P-matrix: ')
