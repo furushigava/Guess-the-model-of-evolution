@@ -210,7 +210,6 @@ class Model_Evolution_Predictor():
         params_k81[1] = 2 * (3 - llf_k81)
         params_f81[1] = 2 * (4 - llf_f81)
         params_sym[1] = 2 * (6 - llf_sym)
-
         if print_datas:
             print('Empirical P-matrix: ')
             print(self.emperical_probability_matrix / self.to_divisions)
