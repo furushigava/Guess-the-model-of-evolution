@@ -1,5 +1,5 @@
 C:\Users\USER\Desktop\project>python Engine_Evolution.py
-Enter path to fasta file or enter "RANDOM" for generate random sequence: sequence_old.txt
+Enter path to fasta file or enter "RANDOM" for generate random sequence: sequence_prp_example.fasta
 Choice a model of nucleotide substitutions:
 1) JC69 (Jukes and Cantor 1969)
 2) K81 (Kimura 1981)
@@ -9,7 +9,7 @@ Choice a model of nucleotide substitutions:
 ==>5
 Start model: SYM with params = [0.029411764705882353, 0.038461538461538464, 0.011764705882352941, 0.014925373134328358, 0.010752688172043012, 0.011904761904761904]
 Enter time: 2.5
-Enter path to save new generated sequence or enter "PRINT" for only print datas: sequence_generated.txt
+Enter path to save new generated sequence or enter "PRINT" for only print datas: example_sequence_generated_prp.fasta
 Q-matrix:
 [[-0.07963801  0.02941176  0.03846154  0.01176471]
  [ 0.02941176 -0.05508983  0.01492537  0.01075269]
@@ -22,8 +22,8 @@ P-matrix:
  [0.02771006 0.02555126 0.02803842 0.91870025]]
 
 C:\Users\USER\Desktop\project>python Predictor_Model_Evolution.py
-Enter path to fasta file with first (old) sequence: sequence_old.txt
-Enter path to fasta file with second (young) sequence: sequence_generated.txt
+Enter path to fasta file with first (old) sequence: sequence_prp_example.fasta
+Enter path to fasta file with second (young) sequence: example_sequence_generated_prp.fasta
 Enter time: 2.5
 Empirical P-matrix:
 [[3373.  261.  370.  110.]
