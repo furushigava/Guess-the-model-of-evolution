@@ -129,16 +129,16 @@ class Model_Evolution_Predictor():
         frequency_C = 100
         frequency_T = 100
         for _ in range(count_of_epochs):
-            A_to_G -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T check_param = 'A_to_G')
-            A_to_C -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T check_param = 'A_to_C')
-            A_to_T -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T check_param = 'A_to_T')
-            G_to_C -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T check_param = 'G_to_C')
-            G_to_T -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T check_param = 'G_to_T')
-            C_to_T -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T check_param = 'C_to_T')
-            frequency_A -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T check_param = 'frequency_A')
-            frequency_G -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T check_param = 'frequency_G')
-            frequency_C -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T check_param = 'frequency_C')
-            frequency_T -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T check_param = 'frequency_T')
+            A_to_G -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T, check_param = 'A_to_G')
+            A_to_C -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T, check_param = 'A_to_C')
+            A_to_T -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T, check_param = 'A_to_T')
+            G_to_C -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T, check_param = 'G_to_C')
+            G_to_T -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T, check_param = 'G_to_T')
+            C_to_T -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T, check_param = 'C_to_T')
+            frequency_A -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T, check_param = 'frequency_A')
+            frequency_G -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T, check_param = 'frequency_G')
+            frequency_C -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T, check_param = 'frequency_C')
+            frequency_T -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T, check_param = 'frequency_T')
         result_delta = self.calc_delta_matrix_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T)
         return [[A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T], result_delta]
 
