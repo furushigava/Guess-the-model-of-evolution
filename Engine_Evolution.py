@@ -38,42 +38,42 @@ if __name__ == "__main__":
         if random_or_no == '1':
             me.generate_random_intensity_matrix(rand_value=0)
         else:
-            alpha = int(input('Enter alpha: '))
+            alpha = float(input('Enter alpha: '))
             intensity_matrix = me.JC69(alpha)
     elif choice == '2':
         random_or_no = input('Select the desired:\nGenerate random params for K81 — 1\nEnter the parameters yourself — 2 ')
         if random_or_no == '1':
             me.generate_random_intensity_matrix(rand_value=1)
         else:
-            alpha = int(input('Enter alpha: '))
-            beta = int(input('Enter beta: '))
-            gamma = int(input('Enter gamma: '))
+            alpha = float(input('Enter alpha: '))
+            beta = float(input('Enter beta: '))
+            gamma = float(input('Enter gamma: '))
             intensity_matrix = me.K81(alpha, beta, gamma)
     elif choice == '3':
         random_or_no = input('Select the desired:\nGenerate random params for F81 — 1\nEnter the parameters yourself — 2 ')
         if random_or_no == '1':
             me.generate_random_intensity_matrix(rand_value=2)
         else:
-            frequency_A = int(input('Enter adenin frequency: '))
-            frequency_G = int(input('Enter guanine frequency: '))
-            frequency_C = int(input('Enter cytosine frequency: '))
-            frequency_T = int(input('Enter thymine frequency: '))
+            frequency_A = float(input('Enter adenin frequency: '))
+            frequency_G = float(input('Enter guanine frequency: '))
+            frequency_C = float(input('Enter cytosine frequency: '))
+            frequency_T = float(input('Enter thymine frequency: '))
             intensity_matrix = me.F81(frequency_A, frequency_G, frequency_C, frequency_T)
     elif choice == '4':
         random_or_no = input('Select the desired:\nGenerate random params for GTR — 1\nEnter the parameters yourself — 2 ')
         if random_or_no == '1':
             me.generate_random_intensity_matrix(rand_value=3)
         else:
-            alpha = int(input('Enter alpha (A_to_G): '))
-            beta = int(input('Enter beta (A_to_C): '))
-            lamda = int(input('Enter lambda (A_to_T): '))
-            delta = int(input('Enter delta (G_to_C): '))
-            epsilon = int(input('Enter epsilon (G_to_T): '))
-            eta = int(input('Enter eta (C_to_T): '))
-            frequency_A = int(input('Enter adenin frequency: '))
-            frequency_G = int(input('Enter guanine frequency: '))
-            frequency_C = int(input('Enter cytosine frequency: '))
-            frequency_T = int(input('Enter thymine frequency: '))
+            alpha = float(input('Enter alpha (A_to_G): '))
+            beta = float(input('Enter beta (A_to_C): '))
+            lamda = float(input('Enter lambda (A_to_T): '))
+            delta = float(input('Enter delta (G_to_C): '))
+            epsilon = float(input('Enter epsilon (G_to_T): '))
+            eta = float(input('Enter eta (C_to_T): '))
+            frequency_A = float(input('Enter adenin frequency: '))
+            frequency_G = float(input('Enter guanine frequency: '))
+            frequency_C = float(input('Enter cytosine frequency: '))
+            frequency_T = float(input('Enter thymine frequency: '))
             intensity_matrix = me.GTR(alpha, beta, gamma, lamda, delta, epsilon, eta, frequency_A, frequency_G, frequency_C, frequency_T)
     elif choice == '5':
         intensity_matrix = me.generate_random_intensity_matrix()[1]
