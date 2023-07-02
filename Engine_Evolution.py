@@ -83,3 +83,7 @@ if __name__ == "__main__":
     time = float(input('Enter time: '))
     path_to_save = input('Enter path to save new generated sequence or enter "PRINT" for only print datas: ')
     engine = Engine_Evolution(sequence, time, intensity_matrix)
+    if path_to_save == 'PRINT':
+        print(engine.get_new_sequence())
+    else:
+        engine.get_new_sequence(path_to_save = path_to_save, sequence_description=sequence_description)
