@@ -124,10 +124,10 @@ class Model_Evolution_Predictor():
         G_to_C = 100
         G_to_T = 100
         C_to_T = 100
-        frequency_A = 100
-        frequency_G = 100
-        frequency_C = 100
-        frequency_T_0 = 100
+        frequency_A = 1
+        frequency_G = 1
+        frequency_C = 1
+        frequency_T_0 = 1
         for _ in range(count_of_epochs):
             A_to_G -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T_0, check_param = 'A_to_G')
             A_to_C -= step * self.calc_derivative_for_one_param_GTR(A_to_G, A_to_C, A_to_T, G_to_C, G_to_T, C_to_T, frequency_A, frequency_G, frequency_C, frequency_T_0, check_param = 'A_to_C')
